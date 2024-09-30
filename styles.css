@@ -1,0 +1,689 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    color: white;
+}
+
+/* Header Navigation with blur effect */
+header {
+    background-color: rgba(14, 14, 14, 0.8);
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin-right: 30px; /* Align to right */
+}
+
+.nav-menu li {
+    margin-right: 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ff0057;
+}
+
+.mint-now-btn {
+    background-color: #FF306E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mint-now-btn:hover {
+    background-color: #e6004f;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Larger text size */
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Slight black gradient for text */
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Same for paragraph */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.btn-primary {
+    padding: 15px 60px; /* Increased button size */
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FF306E;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e6004f;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* Supported Section */
+.supported {
+    background: linear-gradient(117deg, black 56%, #3CDCBF 115%);
+    padding: 80px 50px;
+    position: relative;
+    margin-top: -40px; /* Move it upwards slightly */
+    align-items: center;
+    text-align: center;
+}
+
+.supported-btn {
+    background-color: #151515;
+    color: white;
+    border: none;
+    padding: 25px 70px; /* Increased padding for left-right */
+    border-radius: 30px;
+    font-size: 27px;
+    font-weight: 600;
+    position: relative;
+    z-index: 10; /* Ensure the button stays on top */
+    top: -50px; /* Adjust this to move the button upwards by half */
+}
+
+
+.supported-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3CDCBF;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -20px; /* Adjust to ensure the border passes through the button */
+}
+
+/* Circles in Supported Section */
+.circle-left, .circle-right {
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+/* Logos inside transparent rectangle */
+.logos-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 30px;
+}
+
+.rectangle {
+    background-color: rgba(21, 21, 21, 0.5); /* Transparent background */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: transform 0.3s;
+}
+
+.rectangle1 {
+    background-color: rgba(21, 21, 21, 0.5); /* Transparent background */
+    padding: 20px 40;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    transition: transform 0.3s;
+}
+
+.rectangle:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.rectangle.no-bg {
+    background-color: transparent; /* Removes background for the logos without backgrounds */
+    box-shadow: none; /* Removes shadow for those without backgrounds */
+}
+
+.rectangle img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 50px 80px;
+    color: white;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h2 span {
+    color: #3CDCBF;
+    font-size: 58px;
+  }
+  
+  .about-content p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    max-width: 40%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .bottom-line {
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 40px auto 0;
+    opacity: 0.5;
+  }
+  
+
+
+
+  /* Features Section */
+.features-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    color: white;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .features-section h2 span {
+    color: #3CDCBF;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Feature Card */
+  .feature-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 23%; /* Make sure all 4 cards fit on one row */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-header {
+    background-color: #ff306e;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+  }
+  
+  /* Modify the card icon position */
+.card-icon {
+    position: absolute;
+    top: 6px; /* Move the icon just below the header */
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Center-align text in the card */
+  .card-body {
+    padding: 30px;
+    position: relative;
+    font-size: 20px;
+    line-height: 2.0;
+    text-align: center; /* Center-align the text */
+  }
+   
+  .card-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Adjust paragraph margin */
+  .feature-card p {
+    margin: 0;
+  }
+  
+
+
+
+  /* Features Integration Section */
+.features-integration-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    color: white;
+    text-align: center;
+  }
+  
+  .features-integration-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #3CDCBF;
+  }
+  
+  .integration-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 4px solid rgba(255, 255, 255, 0.2); /* Outer border for container */
+    padding: 20px;
+    /* border-radius: 12px; */
+    margin-bottom: 40px;
+  }
+  
+  /* Flexbox Layout for Integration Card */
+.integration-card3 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align content in the center */
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3CDCBF; /* Border around each logo */
+    /* border-radius: 12px; */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ensure the image stays at the top */
+  .integration-card3 img {
+    width: 80%;
+    height: auto;
+    margin-bottom: auto; /* Push the image to the top */
+  }
+  
+  /* Style the H1 Tag */
+  .integration-card3 h1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+  
+  .integration-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3CDCBF; /* Border around each logo */
+    /* border-radius: 12px; */
+  }
+  
+  .integration-card h1 {
+    margin-top: 10px; /* Space between the image and the text */
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+  .integration-card img {
+    width: 80%;
+    height: auto;
+  }
+  
+  /* White Paper Button */
+  .whitepaper-container {
+    margin-top: 30px;
+  }
+  
+  .whitepaper-btn {
+    background-color: #ff306e;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .whitepaper-btn:hover {
+    background-color: #e6004f;
+  }
+  
+
+
+
+
+  /* KasCexnomics Section */
+.kascexnomics-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .kascexnomics-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .kascexnomics-left {
+    max-width: 50%;
+  }
+  
+  .kascexnomics-left h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .kascexnomics-left .slogan {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #b3b3b3; /* Lighter color for slogan */
+  }
+  
+  /* Boxes Container */
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box {
+    border: 4px solid #3CDCBF;
+    padding: 20px;
+    text-align: center;
+    /* border-radius: 10px; */
+    width: 45%; /* Adjust to fit two boxes per row */
+    font-size: 26px;
+    color: white;
+  }
+  
+  /* Right: Image */
+  .kascexnomics-right img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+
+
+
+
+  /* Roadmap Section */
+.roadmap-section {
+    background: linear-gradient(135deg, #000C1F 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .roadmap-button-container {
+    margin-bottom: 40px;
+  }
+  
+  .project-owner-btn {
+    background-color: #ff306e;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .project-owner-btn:hover {
+    background-color: #e6004f;
+  }
+  
+  .roadmap-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+  }
+  
+  .roadmap-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .roadmap-phase {
+    text-align: center;
+    flex: 1;
+    position: relative;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #3CDCBF;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    position: relative;
+  }
+  
+  .p2 {
+    background-color: #ff306e;
+  }
+  
+  .p3 {
+    background-color: #3CDCBF;
+  }
+  
+  .p4 {
+    background-color: #A0A0A0;
+  }
+  
+  .roadmap-description {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  
+  .roadmap-description h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .roadmap-description p {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  
+  /* Curved Connector Paths */
+  .roadmap-section:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    height: 6px;
+    background: linear-gradient(to right, #3CDCBF, #ff306e, #3CDCBF, #A0A0A0);
+    z-index: -1;
+    border-radius: 100px;
+  }
+  
+
+
+
+
+
+
+  /* How To Buy Section */
+.how-to-buy-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    text-align: center;
+    color: white;
+  }
+  
+  .how-to-buy-btn-container {
+    margin-bottom: 40px;
+  }
+  
+  .how-to-buy-btn {
+    background-color: transparent;
+    color: white;
+    padding: 25px 50px;
+    border: 3px solid #3CDCBF;
+    /* border-radius: 30px; */
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-decoration: none; /* This removes the underline */
+
+  }
+  
+  .how-to-buy-btn:hover {
+    background-color: rgba(60, 220, 191, 0.2);
+  }
+  
+  .how-to-buy-image img {
+    width: 100%;
+    max-width: 1700px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+
+
+
+  /* Official Link Section */
+.official-link-section {
+    background: linear-gradient(135deg, black 30%, #3CDCBF 100%);
+    padding: 60px 80px;
+    text-align: center;
+    color: white;
+  }
+  
+  .official-link-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .official-link-container {
+    background-color: #3CDCBF;
+    padding: 20px 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Footer Text */
+  .footer-text {
+    margin-top: 40px;
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+  
